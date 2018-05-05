@@ -17,7 +17,7 @@ public class Controller {
     private Request req;
     private Response res;
 
-    protected MapBuilder<Object, Object> model = new MapBuilder<>();
+    protected MapBuilder<String, Object> model = new MapBuilder<>();
     private Renderer renderer;
     private String currentView = "index.vm";
 
