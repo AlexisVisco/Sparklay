@@ -14,12 +14,12 @@ import java.util.Set;
 
 public class Controller {
 
-    private Request req;
-    private Response res;
+    public Request req;
+    public Response res;
 
     protected MapBuilder<String, Object> model = new MapBuilder<>();
     private Renderer renderer;
-    private String currentView = "index.vm";
+    public String currentView = "index.vm";
 
     public Controller(Request req, Response res, Renderer renderer) {
         this.req = req;
